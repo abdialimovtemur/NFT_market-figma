@@ -9,6 +9,19 @@
     &__shrink{
         box-shadow: 0px 0px 30px rgb(0, 81, 255);
     }
+    &__sign_up{
+        padding: 14px 30px;
+        border: none;
+        border-radius: 10px;
+        color: white;
+        background-color: blue;
+
+        &:hover{
+            background-color: green;
+        }
+
+
+    }
 
     &__btn-hamburger{
         width: 20px;
@@ -52,6 +65,10 @@
 
 @media (min-width: 500px){
     .header{
+        
+        &__sign_up{
+            padding: 8px 12px;
+        }
         &__list{
             position: static;
             flex-direction: row;
@@ -78,29 +95,29 @@
 
 
 
+@media (min-width: 800px){
+    .header{
+        &__list{
+            position: static;
+            flex-direction: row;
+            height: auto;
+            width: auto;
+            padding: 10px;
+            backdrop-filter: none;
 
-// @media (min-width: 800px){
-//     .header{
-//         &__list{
-//             position: static;
-//             flex-direction: row;
-//             height: auto;
-//             width: auto;
-//             padding: 10px;
-//             backdrop-filter: none;
+            & a{
+                background: none;
+                color: white;
+                font-size: 18px;
+                padding: 5px;
+                border-radius: 3px;
+                border: none;
+            }
+        }
 
-//             & a{
-//                 background: none;
-//                 color: white;
-//                 font-size: 18px;
-//                 padding: 5px;
-//                 border-radius: 3px;
-//                 border: none;
-//             }
-//         }
+        &__btn-hamburger{
+            display: none;
+        }
+    }
+}
 
-//         &__btn-hamburger{
-//             display: none;
-//         }
-//     }
-// }
