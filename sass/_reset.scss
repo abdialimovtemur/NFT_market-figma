@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+a{
+    color: inherit;
+}
+
+button{
+    cursor: pointer;
+}
+
+.container{
+    width: 85%;
+    margin: 0 auto;
+    max-width: 1440px;
+}
+
+.df{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+
+body{
+    background-color: #2B2B2B;
+}

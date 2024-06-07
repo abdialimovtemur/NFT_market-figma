@@ -1,0 +1,107 @@
+.collection{
+    padding: 40px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+    &__cards{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 150px;
+    }
+    &__discriptions{
+        padding: 90px 0px;
+        font-size: 30px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__card1{
+        // width: 33%;
+    }
+
+    &__card2{
+        display: none;
+    }
+
+    &__card3{
+        display: none;
+    }
+
+    &__card__imgs{
+        display: flex;
+        gap: 15px;
+        padding: 10px 0px;
+    }
+}
+
+@media (min-width: 500px){
+    .collection{
+        padding: 30px;
+
+        
+
+       &__card1{
+        img{
+            width: 110%;
+        }
+
+       }
+
+       &__card2{
+        img{
+            width: 110%;
+        }
+       }
+
+       &__card3{
+        img{
+            width: 110%;
+        }
+
+       }
+
+
+        &__cards{
+          
+            &img{
+                width: 60%;
+            }
+        }
+
+        width: 100%;
+        &__card2{
+           display: block;
+        }
+    }
+
+    .collection__card__imgs{
+        img{
+            width: 32%;
+        }
+    }
+
+    .collection__cards__discreption{
+        img{
+            width: 10%;
+            margin: 3px 0px;
+        }
+        h2{
+            font-size: 90%;
+        }
+    }
+}
+
+@media (min-width: 800px){
+    .collection{
+        &__card2{
+           display: block;
+        }
+
+        &__card3{
+            display: block;
+        }
+    }
+}
