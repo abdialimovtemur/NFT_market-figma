@@ -1,0 +1,45 @@
+.browse{
+    &__info{
+        font-size: 40px;
+        padding: 40px 0px;
+    }
+
+    &__cards{
+        width: 100%;
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 34px;
+    }
+
+    &__card{
+        border-radius: 30px;
+        background-color: #3B3B3B;
+
+        img{
+            width: 100%;
+        }
+
+        &__description{
+            font-size: 20px;
+            padding: 15px 20px;
+        }
+    }
+}
+
+@media (min-width: 706px){
+
+        .browse{
+            &__cards{
+                // width: 100%;
+                grid-template-columns: auto auto auto auto;
+                &__card{
+                &__description{
+                    font-size: 1px;
+                    padding: 15px 20px;
+                }
+            }
+            
+        }
+    }
+   
+}
