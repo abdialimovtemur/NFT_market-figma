@@ -29,6 +29,12 @@ button{
     gap: 15px;
 }
 
-body{
+main{
     background-color: #2B2B2B;
+}
+
+button{
+    &:hover{
+        color: yellow;
+    }
 }

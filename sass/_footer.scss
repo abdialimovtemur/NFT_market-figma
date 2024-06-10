@@ -1,0 +1,176 @@
+.footer{
+    background-color: #3B3B3B;
+    width: 100%;
+    padding: 20px 30px;
+
+    p{
+        color: #CCCCCC;
+    }
+
+    .footer__cards{
+        width: 100%;
+        display: grid;
+        grid-template-columns: auto; 
+        grid-template-rows: auto auto auto;
+        gap: 33px;
+
+        .marketplace__card{
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+
+            .nft__marketplace{
+                font-size: 22px;
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            }
+
+            &__icons{
+                font-size: 23px;
+                display: flex;
+                gap: 11px;
+               
+
+                & i{
+                    color: #CCCCCC;
+                }
+            }
+        }
+
+        .explore__card{
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+
+            &__title{
+                font-size: 22px;
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            }
+            
+        }
+
+        .join__card{
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+
+            &__title{
+                font-size: 22px;
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            }
+
+            .footer__input{
+                display: grid;
+                gap: 15px;
+
+                input{
+                    padding: 12px 40px;
+                    border: none;
+                    border-radius: 30px;
+                    font-size: 16px;
+                }
+
+                .footer__button{
+                    background-color: #A259FF;
+                    gap: 10px;
+                    align-items: center;
+                    justify-content: center;
+                    padding: 12px 0px;
+                    border: none;
+                    border-radius: 30px;
+                    font-size: 16px;
+
+                    i{
+                        margin-right: 10px;
+                    }
+                }
+            }
+
+            .footer__search2{
+               
+                .footer__input2{
+                  
+                }
+
+                .footer__button2{
+               
+                }
+            }
+        }
+    }
+
+    .footer__ending{
+        font-size: 12px;
+        border-top: 2px solid #858584;
+        margin: 22px 0px;
+        padding: 20px 0px;
+    }
+
+}
+
+
+@media (min-width: 500px){
+    .footer{
+        .join__card{
+
+            .footer__input{
+
+                .footer__button{
+                    display: none;
+                }
+                
+                input{
+                    display: none;
+                }
+
+            }
+
+            .footer__search2{
+                .footer__input2{
+                    padding: 10px 10px;
+                    border: none;
+                    border-radius: 9px;
+                }
+
+                .footer__button2{
+                    background-color: #A259FF;
+                    position: absolute;
+                    font-size: 14px;
+                    padding: 10px 10px;
+                    border: none;
+                    border-radius: 9px;
+                    left: 142px;
+                }
+            }
+    }   }
+}
+
+
+
+@media (min-width: 800px){
+    .footer{
+        padding: 34px 110px;
+        .footer__cards{
+            width: 100%;
+            display: grid;
+            grid-template-columns: auto auto auto; 
+            grid-template-rows: auto ;
+            gap: 33px;
+
+            .footer__search2{
+                width: 220px;
+                position: relative;
+
+
+                .footer__button2{
+                    background-color: #A259FF;
+                    position: absolute;
+                    font-size: 14px;
+                    padding: 10px 10px;
+                    border: none;
+                    border-radius: 9px;
+                }
+    
+            }
+        }
+    }
+}

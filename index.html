@@ -9,7 +9,7 @@
 </head>
 <body>
     <header class="header">
-        <nav class="header__n                                  av container df">
+        <nav class="header__nav container df">
             <div class="header__logo">
                 <a href="./index.html"><img src="./img/logo.png" alt=""></a>
             </div>
@@ -18,7 +18,7 @@
                     <li class="header__item"><a href="#" class="header__link">Marketplace</a></li>
                     <li class="header__item"><a href="#" class="header__link">Rankings</a></li>
                     <li class="header__item"><a href="#" class="header__link">Connect a wallet</a></li>
-                    <button class="header__sign_up">Sign Up</button>
+                    <a href="./html/login.html"><button class="header__sign_up">Sign Up</button></a>
                 </ul>
                 <div class="header__btns">
                     <button class="header__btn-hamburger">
@@ -276,9 +276,7 @@
         </section>
 
         <section class="discover container">
-            <h1>
-                Discover More NFTs
-            </h1>
+            <h1 class="discover__title">Discover More NFTs </h1>
             <div class="discover__cards">
                 <div class="discover__card">
                     <img src="./img/discover1.svg" alt="">
@@ -293,9 +291,90 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="discover__card">
+                    <img src="./img/discover1.svg" alt="">
+                    <div  class="discover__card__info">
+                        <h1>Distant Galaxy</h1>
+                        <h3>MoonDancer</h3>
+                        <div>
+                            <div class="discover__card__price">
+                                <p>Price</p>
+                                <h4>1.83 ETH</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="discover__card">
+                    <img src="./img/discover1.svg" alt="">
+                    <div  class="discover__card__info">
+                        <h1>Distant Galaxy</h1>
+                        <h3>MoonDancer</h3>
+                        <div>
+                            <div class="discover__card__price">
+                                <p>Price</p>
+                                <h4>1.83 ETH</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
+
+            
         </section>
     </main>
+
+    <footer class="footer">
+        <div class="footer__cards">
+            <div class="marketplace__card">
+                <h3 class="nft__marketplace">
+                    <i class="fa-solid fa-store"></i>
+                    NFT Marketplace  
+                </h3>
+                <a href="#">
+                    <p>NFT marketplace UI created with Anima for Figma.</p>
+                </a>
+                <a href="#">
+                    <p>Join our community</p>
+                </a>
+                <div class="marketplace__card__icons">
+                    <a href="https://discord.com/invite/eQxkYTNxSp"><i class="fa-brands fa-discord"></i></a>
+                    <a href="https://www.youtube.com/channel/UCXqr0Ca-b73rU9zcpSBJ5cw"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="https://twitter.com/animaapp?lang=en"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/animaapp/?hl=en"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+
+
+            <div class="explore__card">
+                <h3 class="explore__card__title">
+                    Explore
+                </h3>
+                <a href="#"><p>Marketplace</p></a>
+                <a href="#"><p>Rankings</p></a>
+                <a href="#"><p>Connect a wallet</p></a>
+            </div>
+
+
+            <div class="join__card">
+                <h3 class="join__card__title">Join our weekly digest</h3>
+                <a href="#"><p>Get exclusive promotions & updates straight to your inbox.</p></a>
+                <div class="footer__input">
+                    <input type="text" placeholder="Enter Your Email Address">
+                    <button class="footer__button"><i class="fa-solid fa-envelope"></i>Subscribe</button>
+                </div>
+                <div class="footer__search2">
+                    <input type="text" placeholder="Enter your email here" class="footer__input2">
+                    <button class="footer__button2">Subscribe</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer__ending">
+            <p>Ⓒ NFT Market. Use this template freely.</p>
+        </div>
+    </footer>
 
     <script src="./js/app.js"></script>
 </body>
