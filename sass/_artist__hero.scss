@@ -1,0 +1,16 @@
+.artist__hero{
+    width: 100%;
+    position: relative;
+
+    .artist_animakid_img{
+        position: absolute;
+        left: 8%;
+        bottom: -14%;
+        width: 110px;
+        height: 110px;
+    }
+
+    img{
+        width: 100%;
+    }
+}

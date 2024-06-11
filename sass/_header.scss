@@ -6,11 +6,13 @@
     width: 100%; 
     padding: 15px 0px;
     z-index: 999;
+
     &__shrink{
         box-shadow: 0px 0px 30px rgb(0, 81, 255);
     }
+
     &__sign_up{
-        padding: 14px 30px;
+        padding: 10px 20px;
         border: none;
         border-radius: 10px;
         color: white;
@@ -19,14 +21,13 @@
         &:hover{
             background-color: green;
         }
-
-
     }
 
     &__btn-hamburger{
         width: 20px;
         background: transparent;
         border: none;
+        font-size: 23px;
     }
 
     &__logo{
@@ -46,7 +47,7 @@
         justify-content: center;
         transition: 0.4s;
         text-align: center;
-        backdrop-filter: invert(67%);
+        background: white;
 
         & a{
             background: white;
@@ -65,31 +66,19 @@
 
 @media (min-width: 500px){
     .header{
-        
         &__sign_up{
             padding: 8px 12px;
-        }
-        &__list{
-            position: static;
-            flex-direction: row;
-            height: auto;
-            width: auto;
-            padding: 10px;
-            backdrop-filter: none;
-
-            & a{
-                background: none;
-                color: white;
-                font-size: 18px;
-                padding: 5px;
-                border-radius: 3px;
-                border: none;
-            }
-        }
-
-        &__btn-hamburger{
             display: none;
         }
+
+        
+        
+
+        &__sign_up{
+            padding: 8px 12px;
+            display: flex;
+        }
+
     }
 }
 
@@ -98,12 +87,13 @@
 @media (min-width: 800px){
     .header{
         &__list{
+            background: transparent;
             position: static;
             flex-direction: row;
             height: auto;
             width: auto;
             padding: 10px;
-            backdrop-filter: none;
+            display: flex;
 
             & a{
                 background: none;
@@ -112,12 +102,15 @@
                 padding: 5px;
                 border-radius: 3px;
                 border: none;
+                display: flex;
             }
         }
 
-        &__btn-hamburger{
-            display: none;
-        }
+        .header__btns{
+            .header__btn-hamburger{
+                display: none;
+            }
+        } 
     }
 }
 
